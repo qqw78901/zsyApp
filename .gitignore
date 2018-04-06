@@ -15,7 +15,7 @@
 *.dmg
 *.gz
 *.iso
-*.jar
+
 *.rar
 *.tar
 *.zip
@@ -44,7 +44,6 @@ fastlane/README*
 build
 node_modules
 xcuserdata
-android/app/src/main/res
 log.android
 .idea
 webpack-assets.json
