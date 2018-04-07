@@ -53,7 +53,7 @@ const AppTabNavigator = TabNavigator({
     tabBarOptions:{
     },
     navigationOptions :{
-    //   tabBarVisible:false
+      tabBarVisible:false
     }
 });
 
