@@ -1,4 +1,4 @@
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator,TabNavigator } from 'react-navigation';
 
 import Home from './App/Home.react';
 // components
@@ -17,6 +17,8 @@ import IconToggle from './IconToggle';
 import List from './List';
 import RadioButton from './RadioButton';
 import Toolbar from './Toolbars';
+import Lianxi from './views/lianxi';
+import Shipin from './views/shipin';
 
 const AppNavigator = StackNavigator({
     home: { screen: Home },
@@ -35,8 +37,25 @@ const AppNavigator = StackNavigator({
     list: { screen: List },
     radioButton: { screen: RadioButton },
     toolbar: { screen: Toolbar },
+    lianxi: { screen: Lianxi },
+    shipin: { screen: Shipin },
 }, {
     headerMode: 'none',
 });
 
+const AppTabNavigator = TabNavigator({
+    lianxi: { screen: Lianxi },
+    actionButton: { screen: ActionButton },
+    shipin: { screen: Shipin }
+    
+}, {
+    tabBarPosition:"bottom",
+    tabBarOptions:{
+    },
+    navigationOptions :{
+    //   tabBarVisible:false
+    }
+});
+
 export default AppNavigator;
+export{AppTabNavigator}

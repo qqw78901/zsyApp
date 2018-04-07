@@ -54,6 +54,9 @@ class Home extends Component {
 
         this.setState({ selected });
     }
+    onNavigationPressed=(routeName)=>{
+        this.props.navigation.navigate(routeName);
+    }
     onScroll = (ev) => {
         const currentOffset = ev.nativeEvent.contentOffset.y;
 
@@ -204,15 +207,15 @@ class Home extends Component {
                     />
                     <BottomNavigation.Action
                         key="bookmark-border"
-                        icon="bookmark-border"
-                        label="Bookmark"
-                        onPress={() => this.setState({ active: 'bookmark-border' })}
+                        icon="book"
+                        label="练习"
+                        onPress={() => this.onNavigationPressed('lianxi')}
                     />
                     <BottomNavigation.Action
-                        key="settings"
-                        icon="settings"
-                        label="Settings"
-                        onPress={() => this.setState({ active: 'settings' })}
+                        key="videocam"
+                        icon="ondemand-video"
+                        label="视频"
+                        onPress={() => this.onNavigationPressed('shipin')}
                     />
                 </BottomNavigation>
             </Container>
