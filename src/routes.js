@@ -19,6 +19,7 @@ import RadioButton from './RadioButton';
 import Toolbar from './Toolbars';
 import Lianxi from './views/lianxi';
 import Shipin from './views/shipin';
+import Chengji from './views/chengji';
 
 const AppNavigator = StackNavigator({
     home: { screen: Home },
@@ -45,9 +46,9 @@ const AppNavigator = StackNavigator({
 
 const AppTabNavigator = TabNavigator({
     lianxi: { screen: Lianxi },
-    actionButton: { screen: ActionButton },
-    shipin: { screen: Shipin }
-    
+    shipin: { screen: Shipin },
+    chengji: { screen: Chengji },
+    button: { screen: Button },
 }, {
     tabBarPosition:"bottom",
     tabBarOptions:{

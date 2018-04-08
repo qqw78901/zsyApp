@@ -52,18 +52,28 @@ class Nav extends Component{
                 label="练习"
                 onPress={() => this.onNavigationPressed('lianxi')}
             />
-            <BottomNavigation.Action
-                key="actionButton"
-                icon="book"
-                label="练习"
-                onPress={() => this.onNavigationPressed('actionButton')}
-            />
+
             
             <BottomNavigation.Action
                 key="shipin"
                 icon="videocam"
                 label="视频"
                 onPress={() => this.onNavigationPressed('shipin')}
+            />
+
+            <BottomNavigation.Action
+                key="chengji"
+                icon="show-chart"
+                label="成绩分析"
+                onPress={() => this.onNavigationPressed('chengji')}
+            />
+
+            
+            <BottomNavigation.Action
+                key="button"
+                icon="account-box"
+                label="个人中心"
+                onPress={() => this.onNavigationPressed('button')}
             />
         </BottomNavigation>
         )
