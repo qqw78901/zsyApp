@@ -37,8 +37,9 @@ class RadioButtonSpec extends Component {
                         checked={this.state.checked}
                         value="Value"
                         onCheck={checked => this.setState({ checked })}
+                        onSelect={() => { }}
                     />
-                    <RadioButton label="Checked by default" checked value="Value" />
+                    <RadioButton label="Checked by default" checked value="Value"  />
                     <RadioButton
                         label="Custom icon"
                         checked
@@ -47,7 +48,7 @@ class RadioButtonSpec extends Component {
                         value="Value"
                     />
                     <RadioButton label="Disabled unchecked" disabled value="Value" />
-                    <RadioButton label="Disabled checked" checked disabled value="Value" />
+                    <RadioButton label="Disabled checked" checked disabled value="A" />
                 </View>
             </Container>
         );

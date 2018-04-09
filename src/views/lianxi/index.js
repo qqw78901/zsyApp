@@ -1,15 +1,16 @@
 import { View, StyleSheet, Text } from 'react-native';
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
+// import { Checkbox } from 'react-native-material-design';
 
-import { Avatar, Card, ListItem, Toolbar } from '../../react-native-material-ui';
+import { Avatar, Card, ListItem, Toolbar, RadioButton,Checkbox } from '../../react-native-material-ui';
 
 import Container from '../../Container';
 
+
 const styles = StyleSheet.create({
     textContainer: {
-        paddingHorizontal: 16,
-        paddingBottom: 16,
+        flex: 1,
     },
 });
 
@@ -20,16 +21,21 @@ const propTypes = {
 };
 
 class Lianxi extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            checked:true
+        }
+        console.log("lianxi")
+    }
     render() {
         return (
             <Container>
-                <Card>
-                    <View style={styles.textContainer}>
-                        <Text>
-                           练习
-                        </Text>
-                    </View>
-                </Card>
+                <View style={styles.textContainer}>
+                    <Checkbox label="I Agree" value="agree" checked={true} onCheck={() => { }} />
+                    <Checkbox label="I Agree" value="agree" checked={true} onCheck={() => { }} />
+                    <Checkbox label="I Agree" value="agree" checked={true} onCheck={() => { }} />
+                </View>
             </Container>
         );
     }

@@ -9,7 +9,7 @@ const propTypes = {
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     checked: PropTypes.bool,
     disabled: PropTypes.bool,
-    onSelect: PropTypes.func.isRequired,
+    onSelect: PropTypes.func,
     theme: PropTypes.string,
 };
 const defaultProps = {
