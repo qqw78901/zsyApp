@@ -1,5 +1,7 @@
 android/**
 build/**
 ios/**
+src/**
 node_modules/**
 **/__test__/**
+
